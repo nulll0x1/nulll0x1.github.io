@@ -31,7 +31,7 @@ atom_feed:
 
 author:
   name : "Muhammad Refaat"
-  avatar: "/images/avatar.jpg"
+  avatar: "avatar.jpg"
   bio: 'Documenting What I Have Learned '
   location: "Everywhere"
 
@@ -50,13 +50,13 @@ defaults:
       show_date: true
       read_time: true  
   -
-    scope:
+  # _pages
+  - scope:
       path: ""
       type: pages
     values:
-      layout: default
-      classes: wide
-      author_profile: true  
+      layout: single
+      author_profile: true
   -
     scope:
       path: ""
@@ -70,3 +70,4 @@ search                   : true
 search_full_content      : true 
 search_provider          : lunr
 
+include: ["_pages"]
