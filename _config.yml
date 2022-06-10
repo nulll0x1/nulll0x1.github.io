@@ -57,13 +57,13 @@ defaults:
     values:
       layout: single
       author_profile: true
-  -
-    scope:
-      path: ""
-      type: index
-    values:
-      layout: single
-      author_profile: true
+  # -
+  #   scope:
+  #     path: ""
+  #     type: index
+  #   values:
+  #     layout: single
+  #     author_profile: true
 
 #Search
 search                   : true 
