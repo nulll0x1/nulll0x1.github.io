@@ -31,7 +31,7 @@ atom_feed:
 
 author:
   name : "Muhammad Refaat"
-  avatar: "/assets/images/avatar.jpg"
+  avatar: "/images/avatar.jpg"
   bio: 'Documenting What I Have Learned '
   location: "Everywhere"
 
