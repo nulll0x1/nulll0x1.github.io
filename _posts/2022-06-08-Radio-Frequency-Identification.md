@@ -32,7 +32,7 @@ There are Different RFID Standards, Frequencies, Vendors, and Usages. But There 
 
 Active Cards have a built-in Battery, The power source is used to run the microchip's circuitry and broadcast the signal back to the reader.
 
-![fig.1: Built-in Battery Active Card](/images/Untitled.png)
+![fig.1: Built-in Battery Active Card](/images/SDR.png)
 
 fig.1: Built-in Battery Active Card
 
@@ -40,7 +40,7 @@ Commonly used as "**beacons" *to accurately track the real-time location of ass
 
 **Beacons**, on the other hand, emit a signal at a pre-set interval. This type of active tag is used in real-time location systems (RTLS) for tracking anything from wheelchairs at a hospital to large cargo containers at a shipping dock. 
 
-![fig.2: Data Transfer between the tag and the reader.](/images/Untitled%201.png)
+![fig.2: Data Transfer between the tag and the reader.](/images/SDR%201.png)
 
 fig.2: Data Transfer between the tag and the reader.
 
@@ -56,7 +56,7 @@ Operates Between **433 MHz - 5.8 GHz**
 - Variety  of designs
 - Tags Can Last a Lifetime Without a Battery
 
-![fig.3: Different Sizes, Shapes, and Flexibility, Same Functionality.](/images/Untitled%202.png)
+![fig.3: Different Sizes, Shapes, and Flexibility, Same Functionality.](/images/SDR%202.png)
 
 fig.3: Different Sizes, Shapes, and Flexibility, Same Functionality.
 
@@ -68,14 +68,14 @@ Operates Between
 
 ### How Passive Cards Works
 
-![                                               fig.4: Passive RFID Card](/images/Untitled%203.png)
+![                                               fig.4: Passive RFID Card](/images/SDR%203.png)
 
                                                fig.4: Passive RFID Card
 
 The Communication between the card and the reader is very simple; Whenever The card is near enough to the reader -Energy-, There is an Electromagnetic Filed Caused to cut throw the copper (inside the Card) and transfer a small amount of energy, enough to power up the Chipset that holds the data (Unique ID). The Reader works at the same frequency as receiver so it can Read the signal of 1's and 0's, Passing it to The Company's Database to check it's authenticity; If That Unique ID number matches, then this card is authorized and the Gate will open. 
 if not, The Gate Will Not open.   
 
-![                            fig.5: Data Exchange Between The Card and The Receiver](/images/Untitled%204.png)
+![                            fig.5: Data Exchange Between The Card and The Receiver](/images/SDR%204.png)
 
                             fig.5: Data Exchange Between The Card and The Receiver
 
@@ -123,7 +123,7 @@ Operates at **125KHz Low Frequency** and has 64-bit of **Read-Only** Memory.
 EM4100 compatible RFID transponders (Card) carry 64 bits of Read-Only memory. This means that information can be read from the Tag but no data can be changed, or written into the card once the card has been programmed with the initial data. 
 The format of the data is as shown here.
 
-![fig.6: Transponder Block Memory.](/images/Untitled%205.png)
+![fig.6: Transponder Block Memory.](/images/SDR%205.png)
 
 fig.6: Transponder Block Memory.
 
@@ -132,7 +132,7 @@ The first 9 bits are a logic 1. These bits are used as a marker sequence to ind
 
 Shown here is an example string for a proximity card that has the data $06 (version number), and $001259E3 as a data string.
 
-![fig.7: Proximity Card and Data Distribute. ](/images/Untitled%206.png)
+![fig.7: Proximity Card and Data Distribute. ](/images/SDR%206.png)
 
 fig.7: Proximity Card and Data Distribute. 
 
@@ -157,36 +157,36 @@ The length of each bit is specified in terms of clock cycles. For the EM4100 pro
 
 Manchester Encoding schemes modulate the RF filed Producing a level transition in the middle of the bit period. A low to high transition represents a logic 1 state, high to low transition represents a logic 0 state. 
 
-![Untitled](/images/Untitled%207.png)
+![SDR](/images/SDR%207.png)
 
 **Encoding Mechanism**
 
 - A 0 is expressed by a low-to-high transition.
 - A 1 is high-to-low transition.
 
-![Untitled](/images/Untitled%208.png)
+![SDR](/images/SDR%208.png)
 
 ### **BiPhase Encoding Scheme**
 
 Biphase Encoding schemes modulate the RF field so that there is a transition at the beginning of each bit boundary.  A logic 0 state has a transition in the middle of the bit period, while a logic 1 state has no transition during the entire bit period.
 
-![Untitled](/images/Untitled%209.png)
+![SDR](/images/SDR%209.png)
 
 ### PSK Encoding Scheme
 
 With PSK (Phase Shift Keying) encoding the RF field is modulated so that there is a transition with each clock period. This means there can be up to 64, 32, or 16 transitions per bit depending on what bit length the Tag is using. When a phase shift occurs it represents a logic 0 state, while a logic 1 state is interpreted when there is no phase change at the bit boundary.
 
-![Untitled](/images/Untitled%2010.png)
+![SDR](/images/SDR%2010.png)
 
 ### Decoding Process - Converting Signals to Data
 
-![Untitled](/images/Untitled%2011.png)
+![SDR](/images/SDR%2011.png)
 
 Let’s Demodulate the EM4100 data buffer that uses Manchester Encoding,
 
 Converting Parity bits to hex extracts the actual data sent from the transponder to the receiver. 
 
-![Untitled](/images/Untitled%2012.png)
+![SDR](/images/SDR%2012.png)
 
 A parity bit is **a check bit, which is added to a block of data for error detection purposes.** 
 It is used to validate the integrity of the data. The value of the parity bit is assigned either 0 or 1  making the number of 1s in the message block either even or odd depending upon the type of parity.
@@ -206,7 +206,7 @@ Using the Proper Tool You Can Read, Manipulate, and Clone nearly most of Low and
 
 There are a lot of RFID Readers/Cloners at the markets, But, We will talk about **Proxmark3** RFID Cloner. 
 
-![fig.8: Proxmark3 RDV4 RFID Cloner](/images/Untitled%2013.png)
+![fig.8: Proxmark3 RDV4 RFID Cloner](/images/SDR%2013.png)
 
 fig.8: Proxmark3 RDV4 RFID Cloner
 
@@ -226,7 +226,7 @@ Every Company orders around **hundreds** of RFID cards for the employees.
 The First Serial Numbers added to the database usually provided to the C level Managers with More Access Permissions. 
 Taking Proxmark3, Enabling Standalone Mode, Brute-Forcing from list of possible ids and you can Grant Access.
 
-![fig.9: Stuff Card Opens all The Locks](/images/Untitled%2014.png)
+![fig.9: Stuff Card Opens all The Locks](/images/SDR%2014.png)
 
 fig.9: Stuff Card Opens all The Locks
 
@@ -237,19 +237,19 @@ Tag’s UID are quite random, So Brute-Forcing is achievable but **NOT** always 
 Real-Life Example: EM410X Hotel Card. 
 Reading The Card with Proxmark3:  
 
-![Untitled](/images/Untitled%2015.png)
+![SDR](/images/SDR%2015.png)
 
 As we see above, The ID Printed on the Card represented as DEZ 14/IK2 and proxmark3 extracted the UID as EM TAG ID **(D0032228B)**.
 
 ### Format Converting Cheatsheet
 
-![Untitled](/images/Untitled%2016.png)
+![SDR](/images/SDR%2016.png)
 
 ---
 
 The Card Above uses DEZ 14; to extract the UID from this format you have to directly convert from binary to hex, using any online converter or from your command-line interface. 
 
-![Untitled](/images/Untitled%2017.png)
+![SDR](/images/SDR%2017.png)
 
 The Resulting Hex Number (UID) Matches with the UID extracted by Proxmark3 at fig.5.
 
@@ -276,16 +276,16 @@ Yes we can, using one of the following readers that can achieve more read distan
 - 125KHz Low Frequency Range Reader
 - Read Distance up to 40-60CMs
 
-![Untitled](/images/Untitled%2018.png)
+![SDR](/images/SDR%2018.png)
 
 
 ### HID R90
 
-![Untitled](/images/Untitled%2020.png)
+![SDR](/images/SDR%2020.png)
 
 **What About Activating Passive Cards from a Distance?** 
 
-![Untitled](/images/Untitled%2021.png)
+![SDR](/images/SDR%2021.png)
 
 **How to Achieve Wider Distances?** 
 
@@ -296,9 +296,9 @@ In the reader's magnetic field - coupling of energy depends on:
 - Antenna Diameter
 - Reader’s noise rejection “filtering”
 
-![Untitled](/images/Untitled%2022.png)
+![SDR](/images/SDR%2022.png)
 
-![Untitled](/images/Untitled%2023.png)
+![SDR](/images/SDR%2023.png)
 
 With some:
 
