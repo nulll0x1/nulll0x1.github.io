@@ -20,7 +20,7 @@ In the commodity SDR hardware available for purchase today, the end-user has acc
 
 ### **Generic SDR Block Diagram**
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled.png)
+![SDR](images/SDR.png)
 
 Generically, the SDR hardware interacts with a host system over a USB 2.0, 3.0, or Ethernet connection, depending on SDR selection. Connecting to a Field Programmable Gate Array (FPGA) that includes software for encoding signal information into binary format, the FPGA interacts with a number of analogs to digital Generic SDR Block Diagram converters (ADC) and a number of digital to analog converters (DAC). The ADCs and DACs connect to a variety of receive and transmit frontends.
 
@@ -48,7 +48,7 @@ Many decisions can affect your selection:
 
 </aside>
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%201.png)
+![SDR](images/SDR%201.png)
 
 ### Different Types of SDRs:
 
@@ -65,7 +65,7 @@ SDR Transceivers are able to both transmit and receive radio signals. in other w
 
 HackRF One is a Software Defined Radio (SDR) peripheral capable of transmission or reception of radio signals from 1 MHz to 6 GHz, designed to enable the test and development of modern and next-generation radio technologies. HackRF One covers many licensed and unlicensed ham radio bands. HackRF One is an open-source hardware platform that can be used as a USB peripheral or programmed for stand-alone operation.
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%202.png)
+![SDR](images/SDR%202.png)
 
 HackRF One works as a sound card of the computer. It processes Digital Signals to Radio waveforms allowing the integration of large-scale communication networks. It is designed to test, develop, improvise, and modify the contemporary Radio Frequency systems.
 
@@ -81,7 +81,7 @@ HackRF One works as a sound card of the computer. It processes Digital Signals t
 YARD Stick One (Yet Another Radio Dongle) can transmit or receive digital wireless signals at frequencies below 1 GHz. It uses the same radio circuit as the popular IM-Me. 
 The radio functions that are possible by customizing IM-Me firmware are now at your fingertips when you attach YARD Stick One to a computer via USB.
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%203.png)
+![SDR](images/SDR%203.png)
 
 YARD Stick One comes with RfCat firmware installed, courtesy of atlas. RfCat allows you to control the wireless transceiver from an interactive Python shell or your own program running on your computer. YARD Stick One also has CC Bootloader installed, so you can upgrade RFCat or install your own firmware without any additional programming hardware.
 
@@ -94,7 +94,7 @@ DEF CON 21 in August 2013. All models feature the ability to do **Full-Duplex Tx
 The BladeRF has an active support community but less so than the HackRF and, as a
 the result, more-limited support with some of the popular SDR tools.
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%204.png)
+![SDR](images/SDR%204.png)
 
 One added benefit of the BladeRF is the nearly out-of-the-box support for OpenBTS and OpenLTE without the alleged need to purchase an external clock source (at about $300). This means one could leverage this device out of the box to man in the middle and/or provide cellular service, and at a reasonable price.
 
@@ -102,7 +102,7 @@ One added benefit of the BladeRF is the nearly out-of-the-box support for OpenBT
 
 In order to have the most efficient reception and transmission, it is important to have the antenna tuned for the desired frequency range. This length is determined by the frequency, and therefore the RF wavelength is based on a specific formula: The total length of the antenna in meters is equal to 300 divided by the frequency in MHz, Divided by 100. 
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%205.png)
+![SDR](images/SDR%205.png)
 
 For reception (RX), any random length antenna will work, but it will not be as efficient as a properly tuned antenna.
 
@@ -122,7 +122,7 @@ There are a lot of tools that can make interacting with RF signals easy. We intr
 
 Of Course, There are a lot of tools does the same job but we recommend using URH, In a similar fashion to GQRX, Universal Radio Hacker (URH) can load samples and display the waveform transition over time, but with significantly more features. At the outset, URH can obtain samples directly from an appropriate SDR.
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%206.png)
+![SDR](images/SDR%206.png)
 
 While we can also recover the symbols per second on a transmission with URH, we can also apply several basic methods of demodulation and decoding, in order to recover the binary for a transmission, which can be converted to the text where appropriate. Additionally, the conversion to binary can be modified and retransmitted with an appropriate SDR or RFcat dongle. 
 
@@ -132,7 +132,7 @@ Overall, URH features far eclipse thanks to AI detection that makes the process 
 
 In Radio Communication systems, the information is carried across space using radio waves. at the end of sending, the information is converted by a Transducer (Converts Signal from one form of energy to another form of signal). 
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled.gif)
+![SDR](images/SDR.gif)
 
 The Process of Taking an RF Transmission and turning it back into something readable/understandable by Humans or Computers is quite challenging. In order to start this process and “Translate” the unknown signals, We have to answer several questions and perform several actions to recover data: 
 
@@ -147,12 +147,12 @@ The Process of Taking an RF Transmission and turning it back into something read
 FCC ID is a unique identifier assigned to a device registered with the United States **Federal Communications Commission** For the legal sale of wireless devices in the US, 
 manufacturers must Have the device evaluated by an independent lab to ensure it conforms to FCC standards. Provide documentation to the FCC of the lab results, Provide User Manuals, Documentation, and Photos relating to the device. Digitally or physically label the device with the unique identifier provided by the FCC. 
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%207.png)
+![SDR](images/SDR%207.png)
 
 If we [Looked up](https://fccid.io/) the FCC-ID printed on the back the of Key we will see a lot of useful information.
  
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%208.png)
+![SDR](images/SDR%208.png)
 
 From The FCC website, we extract nearly all the questions we have been asking and more useful data. 
 
@@ -168,7 +168,7 @@ A remote keyless system can include both *remote keyless entry* (RKE), which u
 
 After Pressing the button that unlock the doors, The key sends a coded secret to the car using the Radio Waves, and if you have an **SDR** you can record this message and **Replay** it again to unlock the doors anytime. 
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%201.gif)
+![SDR](images/SDR%201.gif)
 
 GIF above explains the idea of Capturing and Replaying back showing that is easy and accessible by anyone with 300$ SDR. Because of that, Car Manufactures Provided a solution called **Rolling Codes**. 
 
@@ -179,7 +179,7 @@ records the transmission and replays it at a later time to cause the receiver to
 
 Remote control systems use a rolling code that changes itself for every use. An attacker may be able to learn the code word that opened the door just now, but the receiver will not accept that code word anymore in the future. A rolling code system uses encryption methods that allow the remote control and the receiver to share codewords but make it difficult for an attacker to break the encryption.
 
-![Untitled](Software%20Defined%20Radio%2094d240a1aba84df19c432e24c54c2d96/Untitled%209.png)
+![SDR](images/SDR%209.png)
 
 In 2015, Security Researcher Samy Kamkar Found **Rolljam Vulnerability**; ****The device transmits a jamming signal to block the vehicle's reception of rolling code signals from the owner's fob, while recording these signals from both of his two attempts needed to unlock the vehicle. 
 The recorded first code is forwarded to the vehicle only when the owner makes the second attempt, while the recorded first code is retained for future use.
