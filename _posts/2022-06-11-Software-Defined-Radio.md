@@ -131,7 +131,7 @@ Overall, URH features far eclipse thanks to AI detection that makes the process 
 
 In Radio Communication systems, the information is carried across space using radio waves. at the end of sending, the information is converted by a Transducer (Converts Signal from one form of energy to another form of signal). 
 
-![SDR]                   (/images/SDR.gif)
+![SDR](/images/SDR.gif)
 
 The Process of Taking an RF Transmission and turning it back into something readable/understandable by Humans or Computers is quite challenging. In order to start this process and “Translate” the unknown signals, We have to answer several questions and perform several actions to recover data: 
 
