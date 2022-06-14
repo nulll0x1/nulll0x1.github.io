@@ -9,9 +9,9 @@ We Introduce The Following Topics to be covered:
 - FCC ID
 - Car Keys
 
-# Background
+## Background
 
-## **What is Software Defined Radio?**
+### **What is Software Defined Radio?**
 
 Software Defined Radio (SDR) is a platform where developers can write software to process and interpret signals received from the RF spectrum instead of developing modulation mechanisms in hardware. Traditional wireless devices, such as Wi-Fi cards, Bluetooth adapters, GSM receivers, and other proprietary systems are designed to be cost-effective and limit accessibility into the wireless spectrum while providing the functionality needed for the product design. 
 By contrast, SDR technology does not make any assumptions as to how the user wishes to interpret the spectrum for receive or transmit paths. 
@@ -25,13 +25,13 @@ Generically, the SDR hardware interacts with a host system over a USB 2.0, 3.0, 
 
 For the process of demodulating traffic, a piece of host software running on PC hardware will tune the receiving board to a given frequency and gain level. When a signal is received, it is passed to the ADCs that feed the data to the FPGA. 
 
-## Usage
+### Usage
 
 Many organizations use proprietary, or nonstandard, wireless technologies (that is, not the Wi-Fi or Bluetooth that we have come to expect in our environments) but often miss the fact that there is or may be some risk of exposure in their use. Knowing and auditing these wireless systems eventually becomes an essential part of a comprehensive wireless security program.
 
 With Software Defined Radio we have the potential to find vulnerabilities in wireless implementations that were previously unknown and pose risks to the organization. 
 
-# Choosing an SDR
+## Choosing an SDR
 
 Because of the Variety of SDR Platforms, It is hard to choose the right SDR for the right job. 
 
@@ -109,7 +109,7 @@ For transmit (TX), antenna length is extremely important. An antenna used for TX
 
 If, during transmission, an antenna is too short and the resulting VSWR (Voltage standing wave ratio) is too high RF energy is reflected back to the transmitter. This reflection, depending on power and duration can permanently damage the transmitter.
 
-# Visualization
+## Visualization
 
 Because wireless signals, represented as radio frequency (RF) energy, are colorless, tasteless, and odorless, it can be very difficult for us as humans to detect their presence. However, by using the capabilities of an SDR device, we can use the full bandwidth of an SDR receive function to convert the presence and strength of RF energy to a visual representation, making it easier to observe and locate in the spectrum. 
 
@@ -127,7 +127,7 @@ While we can also recover the symbols per second on a transmission with URH, we 
 
 Overall, URH features far eclipse thanks to AI detection that makes the process of data recovery, modification, and re-transmission easier. 
 
-# From RF Signal to Bytes
+## From RF Signal to Bytes
 
 In Radio Communication systems, the information is carried across space using radio waves. at the end of sending, the information is converted by a Transducer (Converts Signal from one form of energy to another form of signal). 
 
@@ -141,7 +141,7 @@ The Process of Taking an RF Transmission and turning it back into something read
 - Converting demodulated and decoded data to binary (Computer Readable)
 - Determine the meaning, format, and protocol that the recovered binary data represents (Human Readable)
 
-# FCC ID
+## FCC ID
 
 FCC ID is a unique identifier assigned to a device registered with the United States **Federal Communications Commission** For the legal sale of wireless devices in the US, 
 manufacturers must Have the device evaluated by an independent lab to ensure it conforms to FCC standards. Provide documentation to the FCC of the lab results, Provide User Manuals, Documentation, and Photos relating to the device. Digitally or physically label the device with the unique identifier provided by the FCC. 
@@ -160,7 +160,7 @@ From The FCC website, we extract nearly all the questions we have been asking an
 
 and a lot of other helpful information about that device, User Manuals, Test Reports, RF-Exposure, and its manufacture. 
 
-# Car Keys
+## Car Keys
 
 A **Remote Keyless System** (**RKS**), also called **Keyless Entry** or **Remote Central Locking**, is Widely used in automobiles, an **RKS** performs the functions of a standard car key without physical contact. When within a few yards of the car, pressing a button on the remote can lock or unlock the doors, and may perform other functions. 
 A remote keyless system can include both *remote keyless entry* (RKE), which unlocks the doors, and *remote keyless ignition* (RKI), which starts the engine.
