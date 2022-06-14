@@ -32,8 +32,7 @@ There are Different RFID Standards, Frequencies, Vendors, and Usages. But There 
 
 Active Cards have a built-in Battery, The power source is used to run the microchip's circuitry and broadcast the signal back to the reader.
 
-![fig.1: Built-in Battery Active Card](/images/Untitled.png)
-
+<img src="/images/Untitled.png" alt="fig.1: Built-in Battery Active Card" width="200"/>
 fig.1: Built-in Battery Active Card
 
 Commonly used as "**beacons" *to accurately track the real-time location of assets or in high-speed environments such as tolling**.*
