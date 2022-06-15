@@ -20,8 +20,6 @@ RFID stands for Radio Frequency Identification, it is Everywhere, You Probably U
 - Loyalty Cards
 - Toys, and More...
 
- 
-
 ## Background
 
 Radio Frequency Identification or RFID Uses an Electromagnetic Field to Automatically Identify and Track Tags Attached to Objects.
@@ -32,16 +30,13 @@ There are Different RFID Standards, Frequencies, Vendors, and Usages. But There 
 
 Active Cards have a built-in Battery, The power source is used to run the microchip's circuitry and broadcast the signal back to the reader.
 
-<img src="/images/Untitled.png" alt="fig.1: Built-in Battery Active Card" width="800"/>
-fig.1: Built-in Battery Active Card
+<img src="/images/Untitled.png" alt="fig.1: Built-in Battery Active Card" width="600"/>
 
 Commonly used as "**beacons" *to accurately track the real-time location of assets or in high-speed environments such as tolling**.*
 
 **Beacons**, on the other hand, emit a signal at a pre-set interval. This type of active tag is used in real-time location systems (RTLS) for tracking anything from wheelchairs at a hospital to large cargo containers at a shipping dock. 
 
 ![fig.2: Data Transfer between the tag and the reader.](/images/Untitled%201.png?style=centerme)
-
-fig.2: Data Transfer between the tag and the reader.
 
 Active tags provide a much longer read range than passive tags, but they are also more expensive.
 
@@ -57,8 +52,6 @@ Operates Between **433 MHz - 5.8 GHz**
 
 ![fig.3: Different Sizes, Shapes, and Flexibility, Same Functionality.](/images/Untitled%202.png?style=centerme)
 
-fig.3: Different Sizes, Shapes, and Flexibility, Same Functionality.
-
 Operates Between 
 
 - **(125-134 kHz)** known commercially as **Low-Frequency Cards**,
@@ -69,14 +62,10 @@ Operates Between
 
 ![fig.4: Passive RFID Card](/images/Untitled%203.png?style=centerme)
 
-                                               fig.4: Passive RFID Card
-
 The Communication between the card and the reader is very simple; Whenever The card is near enough to the reader -Energy-, There is an Electromagnetic Filed Caused to cut throw the copper (inside the Card) and transfer a small amount of energy, enough to power up the Chipset that holds the data (Unique ID). The Reader works at the same frequency as receiver so it can Read the signal of 1's and 0's, Passing it to The Company's Database to check it's authenticity; If That Unique ID number matches, then this card is authorized and the Gate will open. 
 if not, The Gate Will Not open.   
 
 ![fig.5: Data Exchange Between The Card and The Receiver](/images/Untitled%204.png?style=centerme)
-
-                            fig.5: Data Exchange Between The Card and The Receiver
 
 ---
 
@@ -124,16 +113,12 @@ The format of the data is as shown here.
 
 ![fig.6: Transponder Block Memory.](/images/Untitled%205.png?style=centerme)
 
-fig.6: Transponder Block Memory.
-
 When the Tag enters the electromagnetic field transmitted by the RFID reader it draws power from the field and will commence transmitting its data as shown above. 
 The first 9 bits are a logic 1. These bits are used as a marker sequence to indicate the beginning of the string.  As Even parity is used throughout the data this 9-bit sequence of 1's will not occur at any other location in the string.  This is followed by 10 groups of 4 data and 1 even parity bits. Finally, there are 4 bits of column parity (Even) and a stop bit (0). The Tag then continues to repeat this string as long as it has power. 
 
 Shown here is an example string for a proximity card that has the data $06 (version number), and $001259E3 as a data string.
 
 ![fig.7: Proximity Card and Data Distribute. ](/images/Untitled%206.png?style=centerme)
-
-fig.7: Proximity Card and Data Distribute. 
 
 ### Data Modulation
 
@@ -207,8 +192,6 @@ There are a lot of RFID Readers/Cloners at the markets, But, We will talk about 
 
 ![fig.8: Proxmark3 RDV4 RFID Cloner](/images/Untitled%2013.png?style=centerme)
 
-fig.8: Proxmark3 RDV4 RFID Cloner
-
 **Different Versions, Different Capabilities.**
 
 Proxmark3 RDV4 Features: 
@@ -226,8 +209,6 @@ The First Serial Numbers added to the database usually provided to the C level M
 Taking Proxmark3, Enabling Standalone Mode, Brute-Forcing from list of possible ids and you can Grant Access.
 
 ![fig.9: Stuff Card Opens all The Locks](/images/Untitled%2014.png?style=centerme)
-
-fig.9: Stuff Card Opens all The Locks
 
 Tag’s UID are quite random, So Brute-Forcing is achievable but **NOT** always effective. 
 
