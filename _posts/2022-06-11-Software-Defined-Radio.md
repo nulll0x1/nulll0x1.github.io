@@ -134,7 +134,7 @@ The Process of Taking an RF Transmission and turning it back into something read
 FCC ID is a unique identifier assigned to a device registered with the United States **Federal Communications Commission** For the legal sale of wireless devices in the US, 
 manufacturers must Have the device evaluated by an independent lab to ensure it conforms to FCC standards. Provide documentation to the FCC of the lab results, Provide User Manuals, Documentation, and Photos relating to the device. Digitally or physically label the device with the unique identifier provided by the FCC. 
 
-![SDR](/images/SDR%207.png?style=centerme )
+<img src="/images/SDR%207.png" alt="SDR" width="600"/>
 
 If we [Looked up](https://fccid.io/) the FCC-ID printed on the back the of Key we will see a lot of useful information.
  
