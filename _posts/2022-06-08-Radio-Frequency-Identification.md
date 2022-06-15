@@ -96,7 +96,7 @@ UHF tags are much cheaper to manufacture, and as such are commonly used in retai
 
 ---
 
-# EM4100
+## EM4100
 
 Probably the cheapest tag on market by EM Microelectronic, Very common especially in low-end devices like:
 
@@ -120,7 +120,7 @@ Shown here is an example string for a proximity card that has the data $06 (vers
 
 ![fig.7: Proximity Card and Data Distribute. ](/images/Untitled%206.png?style=centerme)
 
-### Data Modulation
+## Data Modulation
 
 The RFID transponder is able to transmit its data by modulating the RF field of the Reader. Here we discuss 3 popular modulation schemes.
 
